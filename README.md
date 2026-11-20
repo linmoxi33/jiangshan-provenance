@@ -81,9 +81,11 @@ from an estimate.
 
 ## Limits
 
-- The universe is `baseline.json ∪ citation keys`; records deleted upstream can leave stale
-  baseline keys (hence 1,496 vs the issue's 1,457). This tool cannot detect orphans without
-  executing the atlas JS.
+- The universe is reconstructed as `baseline.json ∪ citation keys`; on upstream commit
+  `3363af7` it is exactly 1,496 records, matching what upstream's own audit loads
+  (`node scripts/audit_sources.js --check` → `383 records referenced, 1113 grandfathered`).
+  If upstream deletes a record without shrinking the baseline, the key would go stale; that
+  cannot be detected without executing the atlas JS.
 - `loc` usability is a shape check (non-empty, not "见原书"/"TBD"/"?"); it cannot tell whether
   the chapter is the right one.
 - No network access, by design: core logic, tests and examples are offline.
