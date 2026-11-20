@@ -1,0 +1,73 @@
+{
+  "by_dynasty": [
+    {
+      "cited": 0,
+      "debt": 2,
+      "dynasty": "qing",
+      "primary_backed": 0,
+      "primary_rate": 0.0,
+      "records": 2,
+      "type": "event",
+      "uncited": 2,
+      "weak_only": 0
+    },
+    {
+      "cited": 1,
+      "debt": 1,
+      "dynasty": "tang",
+      "primary_backed": 1,
+      "primary_rate": 0.5,
+      "records": 2,
+      "type": "milestone",
+      "uncited": 1,
+      "weak_only": 0
+    },
+    {
+      "cited": 1,
+      "debt": 1,
+      "dynasty": "*",
+      "primary_backed": 0,
+      "primary_rate": 0.0,
+      "records": 1,
+      "type": "person",
+      "uncited": 0,
+      "weak_only": 1
+    },
+    {
+      "cited": 1,
+      "debt": 0,
+      "dynasty": "tang",
+      "primary_backed": 1,
+      "primary_rate": 1.0,
+      "records": 1,
+      "type": "event",
+      "uncited": 0,
+      "weak_only": 0
+    }
+  ],
+  "finding_counts": {
+    "NO_PRIMARY_SOURCE": 1
+  },
+  "findings": [
+    {
+      "code": "NO_PRIMARY_SOURCE",
+      "detail": "persons.json: cited, but no primary work with a usable locus",
+      "key": "person:example",
+      "severity": "warning"
+    }
+  ],
+  "src": "/home/ubuntu/GitHub/work/trending/jiangshan-provenance/examples/in",
+  "totals": {
+    "citation_files": 2,
+    "cited": 3,
+    "coverage_rate": 0.5,
+    "overstatement": 0.1667,
+    "primary_backed": 2,
+    "primary_rate": 0.3333,
+    "primary_works": 2,
+    "records": 6,
+    "uncited": 3,
+    "weak_only": 1,
+    "works": 4
+  }
+}

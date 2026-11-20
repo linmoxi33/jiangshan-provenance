@@ -1,0 +1,19 @@
+{
+  "zztj": {
+    "zh": "资治通鉴",
+    "kind": "primary",
+    "url": "https://zh.wikisource.org/wiki/資治通鑑"
+  },
+  "jts": {
+    "zh": "旧唐书",
+    "kind": "primary"
+  },
+  "wiki": {
+    "zh": "维基百科",
+    "kind": "web"
+  },
+  "modern": {
+    "zh": "今人研究著作",
+    "kind": "secondary"
+  }
+}
