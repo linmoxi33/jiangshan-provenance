@@ -42,11 +42,14 @@ replace human proofreading. It measures provenance *shape*, not truth.
 Requires Python 3.8+, no packages.
 
 ```bash
+# offline smoke test with the bundled fixture (no network, no packages)
+python3 bin/provenance.py examples/in --json | diff - examples/out/expected.json && echo OK
+
+# against a real atlas checkout (optional)
 git clone --depth=1 --filter=blob:none --sparse git@github.com:DeanChensj/jiangshan-map.git jsmap
 cd jsmap && git sparse-checkout set data/sources && cd ..
 python3 bin/provenance.py jsmap/data/sources
 python3 bin/provenance.py jsmap/data/sources --json > report.json
-python3 bin/provenance.py examples/in --json | diff - examples/out/expected.json && echo OK
 ```
 
 Exit-code table:
