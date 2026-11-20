@@ -56,7 +56,7 @@
       "severity": "warning"
     }
   ],
-  "src": "/home/ubuntu/GitHub/work/trending/jiangshan-provenance/examples/in",
+  "src": "examples/in",
   "totals": {
     "citation_files": 2,
     "cited": 3,

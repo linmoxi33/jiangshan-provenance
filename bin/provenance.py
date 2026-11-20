@@ -155,7 +155,7 @@ def audit(src_dir):
     counts = {}
     for f in findings:
         counts[f["code"]] = counts.get(f["code"], 0) + 1
-    report = {"src": os.path.abspath(src_dir), "totals": totals,
+    report = {"src": src_dir, "totals": totals,
               "by_dynasty": by_dynasty, "finding_counts": counts,
               "findings": findings}
     return report
